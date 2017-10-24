@@ -47,7 +47,8 @@ grid:
   coordinates: $HOME/Canyons/mackenzie_canyon/grid/coords_for_agrif.nc
   bathymetry: $HOME/Canyons/mackenzie_canyon/grid/ideal_bathy_for_agrif.nc
   AGRIF_1:
-    coordinates: $HOME/Canyons/final_runs/runs/ideal_base/1_coords_for_agrif.nc
+    #coordinates: $HOME/Canyons/final_runs/runs/ideal_base/1_coords_for_agrif.nc
+    coordinates: ./1_coords_for_agrif.nc
     bathymetry: $HOME/Canyons/final_runs/runs/ideal_base/1_ideal_bathy_for_agrif.nc
 
 
