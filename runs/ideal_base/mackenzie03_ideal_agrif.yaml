@@ -36,17 +36,19 @@ paths:
   # If relative, paths below are taken from current directory
   # You can use ~, $USER, $HOME if you wish.
   XIOS: $HOME/Canyons/XIOS/
+  #
+  forcing: $HOME/Canyons/mackenzie_canyon/
   # Directory in which to create temporary run directories
   # Typically NOT inside a version control repository
-  runs directory: HOME/Canyons/results_mackenzie/final_runs
+  runs directory: $HOME/Canyons/results_mackenzie/final_runs
 
 
 grid:
   coordinates: $HOME/Canyons/mackenzie_canyon/grid/coords_for_agrif.nc
   bathymetry: $HOME/Canyons/mackenzie_canyon/grid/ideal_bathy_for_agrif.nc
   AGRIF_1:
-    coordinates: ./1_coords_for_agrif.nc
-    bathymetry: ./1_ideal_bathy_for_agrif.nc
+    coordinates: $HOME/Canyons/final_runs/runs/ideal_base/1_coords_for_agrif.nc
+    bathymetry: $HOME/Canyons/final_runs/runs/ideal_base/1_ideal_bathy_for_agrif.nc
 
 
 forcing:
