@@ -1,0 +1,1 @@
+/home/imachuca/Canyons/mackenzie_canyon/conditions/NEMO_files/salinity/salinity_for_agrif.nc
