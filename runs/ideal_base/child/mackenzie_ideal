@@ -18,7 +18,7 @@
     nb_connection_pts = 3
     removeclosedseas = false
     type_bathy_interp = 2
-    rn_hmin = 3
+    rn_hmin = 8.75
 /
 
 &nesting
@@ -51,8 +51,8 @@
     partial_steps = true
     parent_bathy_meter = 'ideal_bathy_for_agrif.nc'
     parent_batmet_name = 'Bathymetry'
-    e3zps_min = 20.0
-    e3zps_rat = 0.1
+    e3zps_min = 5.0  !20.0
+    e3zps_rat = 0.25 !0.1
 /
 
 &nemo_coarse_grid
