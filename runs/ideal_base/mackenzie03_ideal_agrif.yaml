@@ -1,4 +1,4 @@
-# nemo command processor run description example for NEMO-3.6
+# test nemo command processor run description example for NEMO-3.6
 
 # Name of the NEMO-3.6 configuration to use for the run;
 # i.e. your NEMO-3.6-code/NEMOGCM/CONFIG/ configuration directory
