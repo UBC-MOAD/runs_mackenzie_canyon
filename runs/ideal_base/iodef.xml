@@ -236,7 +236,7 @@
         We must have buffer_size > jpi*jpj*jpk*8 (with jpi and jpj the subdomain size)
      November 16, 2017 - buffer_server_factor_size = 2. IAM testing 0.1 changed back.
 -->
-	  <variable id="buffer_size"               type="integer">40542258</variable>
+	  <variable id="buffer_size"               type="integer">30406693</variable>
 	  <variable id="buffer_server_factor_size" type="integer">2</variable>
 	  <variable id="info_level"                type="integer">0</variable>
       <variable id="using_server"              type="boolean">true</variable>
