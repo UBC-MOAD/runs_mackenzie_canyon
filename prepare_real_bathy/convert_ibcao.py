@@ -5,15 +5,15 @@ from IPython import embed
 import sys
 
 # Get helper functions
-sys.path.append('/home/mdunphy/MEOPAR/analysis-michael/bathymetry')
+sys.path.append('/home/imachuca/MEOPAR/analysis-michael/bathymetry')
 from bathy_helpers import expandf
 
 # Coordsfile is used to determine IBCAO spatial truncation 
-coordsfile = '/home/mdunphy/Canyons/mackenzie_canyon/coordinates/NEMO_files/coords_for_agrif.nc'
+coordsfile = '/home/imachuca/Canyons/runs_mackenzie_canyon/coordinates/NEMO_files/coords_for_agrif.nc'
 
 # Source IBCAO file and destination for truncated IBCAO data in NEMO format
-src='/home/mdunphy/MEOPAR/WORK/IBCAO/IBCAO_V3_500m_RR.grd'
-dst='/home/mdunphy/MEOPAR/WORK/IBCAO/IBCAO_V3_500m_RR_For_Nesting_Tools.nc'
+src='/home/imachuca/Canyons/runs_mackenzie_canyon/prepare_real_bathy/IBCAO_V3_500m_RR.grd'
+dst='/home/imachuca/Canyons/runs_mackenzie_canyon/prepare_real_bathy/IBCAO_V3_500m_RR_For_Nesting_Tools.nc'
 
 # Get the IBCAO data, make depths positive, and make elevations zero
 bathy = ibcao.IBCAO(ibcao_grd_file = src)
