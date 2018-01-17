@@ -43,6 +43,7 @@ makefiles mackenzie_real
 echo made files
 
 mv 1_*nc AGRIF_FixedGrids.in ../
+mv real_bathy_for_agrif_fix_updated.nc ../
 echo moved files
 
 rm real_bathy_for_agrif_fix.nc
