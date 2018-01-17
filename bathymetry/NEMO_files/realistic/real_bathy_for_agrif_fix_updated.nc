@@ -1,1 +1,0 @@
-/home/imachuca/Canyons/runs_mackenzie_canyon/runs/real_base/child/real_bathy_for_agrif_fix_updated.nc
