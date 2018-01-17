@@ -37,19 +37,18 @@ paths:
   # You can use ~, $USER, $HOME if you wish.
   XIOS: $HOME/XIOS/
   #
-  #forcing: $HOME/Canyons/mackenzie_canyon/
+  forcing: $HOME/Canyons/mackenzie_canyon/
   # Directory in which to create temporary run directories
   # Typically NOT inside a version control repository
-  runs directory: $HOME/Canyons/results_mackenzie/runs_mackenzie_canyon
+  runs directory: $HOME/Canyons/results_mackenzie/initial_collection
 
 
 grid:
-  coordinates: $HOME/Canyons/mackenzie_canyon/grid/coords_for_agrif.nc
-  bathymetry: $HOME/Canyons/mackenzie_canyon/grid/ideal_bathy_for_agrif.nc
+  coordinates: $HOME/Canyons/runs_mackenzie_canyon/coordinates/NEMO_files/coords_for_agrif.nc
+  bathymetry: $HOME/Canyons/runs_mackenzie_canyon/runs/real_base/real_bathy_for_agrif_fix_updated.nc
   AGRIF_1:
-    coordinates: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_base/1_coords_for_agrif.nc
-    #coordinates: ./1_coords_for_agrif.nc
-    bathymetry: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_base/1_ideal_bathy_for_agrif.nc
+    coordinates: $HOME/Canyons/runs_mackenzie_canyon/runs/real_base/1_coords_for_agrif.nc
+    bathymetry: $HOME/Canyons/runs_mackenzie_canyon/runs/real_base/1_real_bathy_for_agrif_fix.nc
 
 
 forcing:
@@ -69,9 +68,9 @@ forcing:
   NEMO_files:
       link to: $HOME/Canyons/mackenzie_canyon/conditions/NEMO_files/
   1_NEMO_files:
-      link to: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_base/
+      link to: $HOME/Canyons/runs_mackenzie_canyon/runs/real_base/
 
-restart:
+#restart:
   # The keys below are the names of symlinks that will be created.
   # The targets of those symlinks will be the paths/filenames associated
   # with the keys;
@@ -82,9 +81,9 @@ restart:
   # that are used in your run.
   #
   # If relative, paths are taken from current directory
-  restart.nc: /global/scratch/imachuca/idealized/sbcana_forcings/agrif_wind_timestep/MCKNZ_00001800_restart.nc
-  AGRIF_1:
-    restart.nc: /global/scratch/imachuca/idealized/sbcana_forcings/agrif_wind_timestep/1_MCKNZ_00005400_restart.nc
+  #restart.nc: /global/scratch/imachuca/idealized/sbcana_forcings/agrif_wind_timestep/MCKNZ_00001800_restart.nc
+  #AGRIF_1:
+  #  restart.nc: /global/scratch/imachuca/idealized/sbcana_forcings/agrif_wind_timestep/1_MCKNZ_00005400_restart.nc
 namelists:
   # The namelist section files in the lists below will be concatenated
   # to create a namelist file whose name is the key under which the files
