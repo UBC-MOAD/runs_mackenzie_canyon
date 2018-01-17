@@ -13,7 +13,7 @@ coordsfile = '/home/imachuca/Canyons/runs_mackenzie_canyon/coordinates/NEMO_file
 
 # Source IBCAO file and destination for truncated IBCAO data in NEMO format
 src='/home/imachuca/Canyons/runs_mackenzie_canyon/prepare_real_bathy/IBCAO_V3_500m_RR.grd'
-dst='/home/imachuca/Canyons/runs_mackenzie_canyon/prepare_real_bathy/IBCAO_V3_500m_RR_For_Nesting_Tools.nc'
+dst='/home/imachuca/Canyons/runs_mackenzie_canyon/prepare_real_bathy/IBCAO_V3_500m_RR_For_Nesting_Tool.nc'
 
 # Get the IBCAO data, make depths positive, and make elevations zero
 bathy = ibcao.IBCAO(ibcao_grd_file = src)
