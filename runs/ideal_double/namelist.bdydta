@@ -1,0 +1,21 @@
+!!
+!!
+!! using ekman velocities
+!!
+!!
+!-----------------------------------------------------------------------
+&nambdy_dta      !  open boundaries - external data           ("key_bdy")
+!-----------------------------------------------------------------------
+!              !  file name      ! frequency (hours) ! variable   ! time interp.   !  clim  ! 'yearly'/   ! weights  ! rotation ! land/sea mask !
+!              !                 !  (if <0  months)  !   name     !   (logical)    !  (T/F )! 'monthly'   ! filename ! pairing  ! filename      !
+   bn_ssh =     'bdy2d_double_for_agrif' ,  1     , 'sossheig' ,     .false.    , .true. ,  'monthly'  ,    ''    ,   ''     , ''
+   bn_u2d =     'bdy2d_double_for_agrif' ,  1     , 'vobtcrtx' ,     .false.    , .true. ,  'monthly'  ,    ''    ,   ''     , ''
+   bn_v2d =     'bdy2d_double_for_agrif' ,  1     , 'vobtcrty' ,     .false.    , .true. ,  'monthly'  ,    ''    ,   ''     , ''
+   bn_u3d  =    'bdy3d_double_for_agrif' ,  1     , 'vozocrtx' ,     .false.    , .true. ,  'monthly'  ,    ''    ,   ''     , ''
+   bn_v3d  =    'bdy3d_double_for_agrif' ,  1     , 'vomecrty' ,     .false.    , .true. ,  'monthly'  ,    ''    ,   ''     , ''
+   bn_tem  =    'bdy3d_double_for_agrif' ,  1     , 'votemper' ,     .false.    , .true. ,  'monthly'  ,    ''    ,   ''     , ''
+   bn_sal  =    'bdy3d_double_for_agrif' ,  1     , 'vosaline' ,     .false.    , .true. ,  'monthly'  ,    ''    ,   ''     , ''
+   cn_dir  =    'NEMO_files/bdy/'
+   ln_full_vel = .false.        ! =T => full velocities in 3D boundary conditions
+                                        ! =F => baroclinic velocities in 3D boundary conditions
+&end
