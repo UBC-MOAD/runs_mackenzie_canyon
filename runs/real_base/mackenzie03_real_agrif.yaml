@@ -8,7 +8,7 @@ config name: mackenzie03agrif
 # i and j grid directions?
 # These values are used to set the nammpp namelist jpni & jpnj values
 # and to set the number of processors and nodes in the PBS script
-MPI decomposition: 10x10
+MPI decomposition: 9x9
 
 # For runs on systems that use qsub/PBS/TORQUE
 #
@@ -18,7 +18,7 @@ run_id: mcknz-real-base
 # Too low and you job will be terminated before it finishes
 # Too high and you will have to wait longer on the queue for your job to start
 # You have to experiment to find the "just right" value
-walltime: 00:10:00
+walltime: 08:00:00
 # Email address to send job begin, end, and abort notifications to
 email: imachuca@eos.ubc.ca
 
@@ -37,10 +37,10 @@ paths:
   # You can use ~, $USER, $HOME if you wish.
   XIOS: $HOME/XIOS/
   #
-  forcing: $HOME/Canyons/mackenzie_canyon/
+  #forcing: $HOME/Canyons/mackenzie_canyon/
   # Directory in which to create temporary run directories
   # Typically NOT inside a version control repository
-  runs directory: $HOME/Canyons/results_mackenzie/initial_collection
+  runs directory: /global/scratch/imachuca
 
 
 grid:
@@ -94,21 +94,23 @@ namelists:
   #
   # If relative, paths are taken from current directory
   namelist_cfg:
-    - namelist.time
-    - namelist.cfg
+    - namelist.winds
+    - ../real_shared_files/namelist.time
+    - ../real_shared_files/namelist.cfg
 
   # Sub-grid domain namelists
   AGRIF_1:
     namelist_cfg:
-      - 1_namelist.time
-      - 1_namelist.cfg
+      - 1_namelist.winds
+      - ../real_shared_files/1_namelist.time
+      - ../real_shared_files/1_namelist.cfg
 
 
 output:
   separate XIOS server: True
   XIOS servers: 1
   # If relative, paths are taken from current directory
-  iodefs: iodef.xml
+  iodefs: ../real_shared_files/iodef.xml
   #filedefs: file_def.xml
   domaindefs: $HOME/Canyons/mackenzie_canyon/output/domain_def.xml
   fielddefs: $HOME/Canyons/mackenzie_canyon/output/field_def.xml
