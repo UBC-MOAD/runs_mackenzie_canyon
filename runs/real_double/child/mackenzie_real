@@ -24,10 +24,10 @@
 /
 
 &nesting
-    imin = 115
-    imax = 175
+    imin = 130
+    imax = 220
     jmin = 10
-    jmax = 100
+    jmax = 90
     rho  = 3
     rhot = 3
     bathy_update = true

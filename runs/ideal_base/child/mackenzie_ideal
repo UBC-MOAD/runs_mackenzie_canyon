@@ -23,9 +23,9 @@
 
 &nesting
     imin = 90
-    imax = 170
+    imax = 180
     jmin = 10
-    jmax = 100
+    jmax = 90
     rho  = 3
     rhot = 3
     bathy_update = false
