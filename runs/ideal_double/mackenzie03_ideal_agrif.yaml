@@ -96,6 +96,7 @@ namelists:
   # If relative, paths are taken from current directory
   namelist_cfg:
     - namelist.winds
+    - namelist.bdydta
     - ../ideal_shared_files/namelist.time
     - ../ideal_shared_files/namelist.cfg
 
