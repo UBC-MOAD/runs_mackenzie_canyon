@@ -1,0 +1,13 @@
+!!
+!!
+!! Winds for this upwelling case
+!!
+!!
+!-----------------------------------------------------------------------
+&namsbc_ana    !   analytical surface boundary condition
+!-----------------------------------------------------------------------
+   nn_tau000   =   91440  !  seconds
+   rn_utau0    =   -0.4   !  uniform value for the i-stress
+   rn_utau1    =   -0.05
+   rn_vtau0    =    0.0   !  uniform value for the j-stress
+&end
