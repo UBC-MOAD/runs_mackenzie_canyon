@@ -51,7 +51,7 @@
 
 &partial_cells    	         ! These values should match the parent grid
     partial_steps = true
-    parent_bathy_meter = '/home/imachuca/Canyons/runs_mackenzie_canyon/prepare_real_bathy/real_bathy_for_agrif_fix.nc'
+    parent_bathy_meter = 'real_bathy_for_agrif_fix.nc'
     parent_batmet_name = 'Bathymetry'
     e3zps_min = 5.0
     e3zps_rat = 0.25
