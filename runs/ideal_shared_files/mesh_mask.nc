@@ -1,0 +1,1 @@
+/home/imachuca/Canyons/results_mackenzie/noagrif/ideal/mesh_mask.nc
