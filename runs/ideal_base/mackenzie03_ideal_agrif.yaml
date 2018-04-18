@@ -103,7 +103,7 @@ namelists:
   # Sub-grid domain namelists
   AGRIF_1:
     namelist_cfg:
-      - 1_namelist.winds
+      - namelist.winds
       - ../ideal_shared_files/1_namelist.time
       - ../ideal_shared_files/1_namelist.cfg
 
