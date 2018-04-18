@@ -13,12 +13,12 @@ MPI decomposition: 9x9
 # For runs on systems that use qsub/PBS/TORQUE
 #
 # The run_id value appears in the list of jobs display by the showq command
-run_id: mcknz-ideal-half
+run_id: mcknz-ideal-double
 # Maximum run time requested/allowed for job
 # Too low and you job will be terminated before it finishes
 # Too high and you will have to wait longer on the queue for your job to start
 # You have to experiment to find the "just right" value
-walltime: 10:00:00
+walltime: 6:00:00
 # Email address to send job begin, end, and abort notifications to
 email: imachuca@eos.ubc.ca
 
@@ -47,9 +47,9 @@ grid:
   coordinates: $HOME/Canyons/runs_mackenzie_canyon/coordinates/NEMO_files/coords_for_agrif.nc
   bathymetry: $HOME/Canyons/mackenzie_canyon/grid/ideal_bathy_for_agrif_nocanyon.nc
   AGRIF_1:
-    coordinates: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_nocanyon_half/1_coords_for_agrif.nc
+    coordinates: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_nocanyon_double/1_coords_for_agrif.nc
     #coordinates: ./1_coords_for_agrif.nc
-    bathymetry: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_nocanyon_half/1_ideal_bathy_for_agrif_nocanyon.nc
+    bathymetry: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_nocanyon_double/1_ideal_bathy_for_agrif_nocanyon.nc
 
 
 forcing:
@@ -69,7 +69,7 @@ forcing:
   NEMO_files:
       link to: $HOME/Canyons/mackenzie_canyon/conditions/NEMO_files/
   1_NEMO_files:
-      link to: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_nocanyon_half/
+      link to: $HOME/Canyons/runs_mackenzie_canyon/runs/ideal_nocanyon_double/
 
 #restart:
   # The keys below are the names of symlinks that will be created.
